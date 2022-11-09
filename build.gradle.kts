@@ -10,6 +10,7 @@ plugins {
     jacoco
     id ("org.sonarqube") version "3.4.0.2513"
     id 'war'
+    id 'java-library'
 
 }
 
