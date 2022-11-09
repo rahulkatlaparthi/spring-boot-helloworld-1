@@ -9,19 +9,16 @@ plugins {
     kotlin("plugin.spring") version "1.3.31"
     jacoco
     id ("org.sonarqube") version "3.4.0.2513"
-    id 'war'
-    id 'java-library'
+    
 
 }
+apply plugin: 'war'
 
 war {
-	enabled = true
-	classifier = ''
+    baseName = 'myapp'
+    version =  '0.5.0'
 }
 
-bootWar {
-	enabled = false
-}
 
 group = "com.example"
 version = "0.0.1-SNAPSHOT"
